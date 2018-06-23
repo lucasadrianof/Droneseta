@@ -22,6 +22,7 @@ public class Produto implements Serializable {
     private String descricao;
     private String tamanho;
     private double preco;
+    private boolean disponivel = true;
 
     public Long getId() {
         return id;
@@ -53,6 +54,14 @@ public class Produto implements Serializable {
 
     public void setPreco(double preco) {
         this.preco = preco;
+    }
+
+    public boolean isDisponivel() {
+        return disponivel;
+    }
+
+    public void setDisponivel(boolean disponivel) {
+        this.disponivel = disponivel;
     }
     
     @Override

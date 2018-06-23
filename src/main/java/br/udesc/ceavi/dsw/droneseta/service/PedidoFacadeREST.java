@@ -1,11 +1,6 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.udesc.ceavi.dsw.droneseta.service;
 
-import br.udesc.ceavi.dsw.droneseta.model.entity.Endereco;
+import br.udesc.ceavi.dsw.droneseta.model.entity.Pedido;
 import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -21,31 +16,31 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
+ * Serviço rest de pedidos
  * @author lucas.adriano
  */
 @Stateless
-@Path("br.udesc.ceavi.dsw.droneseta.model.entity.endereco")
-public class EnderecoFacadeREST extends AbstractFacade<Endereco> {
+@Path("pedidos")
+public class PedidoFacadeREST extends AbstractFacade<Pedido> {
 
     @PersistenceContext(unitName = "br.udesc.ceavi.dsw_droneseta_war_1.0-SNAPSHOTPU")
     private EntityManager em;
 
-    public EnderecoFacadeREST() {
-        super(Endereco.class);
+    public PedidoFacadeREST() {
+        super(Pedido.class);
     }
 
     @POST
     @Override
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void create(Endereco entity) {
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void create(Pedido entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Long id, Endereco entity) {
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void edit(@PathParam("id") Long id, Pedido entity) {
         super.edit(entity);
     }
 
@@ -57,22 +52,22 @@ public class EnderecoFacadeREST extends AbstractFacade<Endereco> {
 
     @GET
     @Path("{id}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Endereco find(@PathParam("id") Long id) {
+    @Produces(MediaType.APPLICATION_JSON)
+    public Pedido find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Endereco> findAll() {
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Pedido> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public List<Endereco> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Pedido> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
 
@@ -87,5 +82,4 @@ public class EnderecoFacadeREST extends AbstractFacade<Endereco> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
 }

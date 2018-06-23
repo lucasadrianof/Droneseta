@@ -2,6 +2,8 @@ package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -17,9 +19,14 @@ public class Usuario implements Serializable {
     private static final long serialVersionUID = 1L;
     
     @Id
-    private Integer cpf;
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+    
+    private int cpf;
     private String nome;
-    private int cartaoCredito;
+    private String senha;
+    private Long cartaoCredito;
+    private int tipo; //@TODO Mudar para enum: 1- Normal 2- Admin
     
     @OneToOne
     private Endereco Endereco;
@@ -27,11 +34,19 @@ public class Usuario implements Serializable {
     @OneToOne
     private Endereco EnderecoEntrega;
 
-    public Integer getCpf() {
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+    
+    public int getCpf() {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
+    public void setCpf(int cpf) {
         this.cpf = cpf;
     }
 
@@ -43,14 +58,30 @@ public class Usuario implements Serializable {
         this.nome = nome;
     }
 
-    public int getCartaoCredito() {
+    public String getSenha() {
+        return senha;
+    }
+
+    public void setSenha(String senha) {
+        this.senha = senha;
+    }
+    
+    public Long getCartaoCredito() {
         return cartaoCredito;
     }
 
-    public void setCartaoCredito(int cartaoCredito) {
+    public void setCartaoCredito(Long cartaoCredito) {
         this.cartaoCredito = cartaoCredito;
     }
 
+    public int getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(int tipo) {
+        this.tipo = tipo;
+    }
+    
     public Endereco getEndereco() {
         return Endereco;
     }
@@ -67,24 +98,26 @@ public class Usuario implements Serializable {
         this.EnderecoEntrega = EnderecoEntrega;
     }
     
-    @Override
+     @Override
     public int hashCode() {
         int hash = 0;
-        hash += (cpf != null ? cpf.hashCode() : 0);
+        hash += (id != null ? id.hashCode() : 0);
         return hash;
     }
 
     @Override
     public boolean equals(Object object) {
+        // TODO: Warning - this method won't work in the case the id fields are not set
         if (!(object instanceof Usuario)) {
             return false;
         }
         Usuario other = (Usuario) object;
-        return !((this.cpf == null && other.cpf != null) || (this.cpf != null && !this.cpf.equals(other.cpf)));
+        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
     }
+
 
     @Override
     public String toString() {
-        return "br.udesc.ceavi.dsw.droneseta.model.entity.Usuario[ id=" + cpf + " ]";
+        return "br.udesc.ceavi.dsw.droneseta.model.entity.Usuario[ id=" + id + " ]";
     }
 }

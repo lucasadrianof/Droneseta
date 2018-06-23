@@ -25,6 +25,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(br.udesc.ceavi.dsw.droneseta.service.EnderecoFacadeREST.class);
+        resources.add(br.udesc.ceavi.dsw.droneseta.service.PedidoFacadeREST.class);
         resources.add(br.udesc.ceavi.dsw.droneseta.service.ProdutoFacadeREST.class);
         resources.add(br.udesc.ceavi.dsw.droneseta.service.UsuarioFacadeREST.class);
     }

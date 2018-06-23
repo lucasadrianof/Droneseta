@@ -1,3 +1,8 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package br.udesc.ceavi.dsw.droneseta.service;
 
 import br.udesc.ceavi.dsw.droneseta.model.entity.Usuario;
@@ -16,6 +21,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
+ *
  * @author lucas.adriano
  */
 @Stateless
@@ -39,20 +45,20 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     @PUT
     @Path("{id}")
     @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public void edit(@PathParam("id") Integer id, Usuario entity) {
+    public void edit(@PathParam("id") Long id, Usuario entity) {
         super.edit(entity);
     }
 
     @DELETE
     @Path("{id}")
-    public void remove(@PathParam("id") Integer id) {
+    public void remove(@PathParam("id") Long id) {
         super.remove(super.find(id));
     }
 
     @GET
     @Path("{id}")
     @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
-    public Usuario find(@PathParam("id") Integer id) {
+    public Usuario find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
@@ -81,4 +87,5 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     protected EntityManager getEntityManager() {
         return em;
     }
+    
 }
