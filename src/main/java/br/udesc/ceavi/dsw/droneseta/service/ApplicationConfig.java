@@ -1,15 +1,10 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.udesc.ceavi.dsw.droneseta.service;
 
 import java.util.Set;
 import javax.ws.rs.core.Application;
 
 /**
- *
+ * Configuração das páginas rest
  * @author lucas.adriano
  */
 @javax.ws.rs.ApplicationPath("webresources")
@@ -33,5 +28,4 @@ public class ApplicationConfig extends Application {
         resources.add(br.udesc.ceavi.dsw.droneseta.service.ProdutoFacadeREST.class);
         resources.add(br.udesc.ceavi.dsw.droneseta.service.UsuarioFacadeREST.class);
     }
-    
 }

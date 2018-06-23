@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.udesc.ceavi.dsw.droneseta.service;
 
 import br.udesc.ceavi.dsw.droneseta.model.entity.Produto;
@@ -21,11 +16,10 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
  * @author lucas.adriano
  */
 @Stateless
-@Path("br.udesc.ceavi.dsw.droneseta.model.entity.produto")
+@Path("produtos")
 public class ProdutoFacadeREST extends AbstractFacade<Produto> {
 
     @PersistenceContext(unitName = "br.udesc.ceavi.dsw_droneseta_war_1.0-SNAPSHOTPU")
@@ -37,14 +31,14 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
 
     @POST
     @Override
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes(MediaType.APPLICATION_JSON)
     public void create(Produto entity) {
         super.create(entity);
     }
 
     @PUT
     @Path("{id}")
-    @Consumes({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Consumes(MediaType.APPLICATION_JSON)
     public void edit(@PathParam("id") Long id, Produto entity) {
         super.edit(entity);
     }
@@ -57,21 +51,21 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
 
     @GET
     @Path("{id}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public Produto find(@PathParam("id") Long id) {
         return super.find(id);
     }
 
     @GET
     @Override
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Produto> findAll() {
         return super.findAll();
     }
 
     @GET
     @Path("{from}/{to}")
-    @Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+    @Produces(MediaType.APPLICATION_JSON)
     public List<Produto> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
         return super.findRange(new int[]{from, to});
     }
@@ -87,5 +81,4 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
 }

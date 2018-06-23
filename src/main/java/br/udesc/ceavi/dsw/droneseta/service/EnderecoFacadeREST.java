@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package br.udesc.ceavi.dsw.droneseta.service;
 
 import br.udesc.ceavi.dsw.droneseta.model.entity.Endereco;
@@ -21,7 +16,6 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
 /**
- *
  * @author lucas.adriano
  */
 @Stateless
@@ -87,5 +81,4 @@ public class EnderecoFacadeREST extends AbstractFacade<Endereco> {
     protected EntityManager getEntityManager() {
         return em;
     }
-    
 }

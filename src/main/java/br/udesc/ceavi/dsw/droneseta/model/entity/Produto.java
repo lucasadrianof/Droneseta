@@ -22,7 +22,6 @@ public class Produto implements Serializable {
     private String descricao;
     private String tamanho;
     private double preco;
-    private int quantidadePorTamanho;
 
     public Long getId() {
         return id;
@@ -54,14 +53,6 @@ public class Produto implements Serializable {
 
     public void setPreco(double preco) {
         this.preco = preco;
-    }
-
-    public int getQuantidadePorTamanho() {
-        return quantidadePorTamanho;
-    }
-
-    public void setQuantidadePorTamanho(int quantidadePorTamanho) {
-        this.quantidadePorTamanho = quantidadePorTamanho;
     }
     
     @Override
