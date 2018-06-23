@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Droneseta</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- button abaixo serve para criar o menu responsivo, logo, ao dominuir a tela, aparecerá o botão 'sanduíche' -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="admin.html" class="navbar-brand">DRONESETA</a>
+        </div>
+        <!-- 'navbar-collapse' serve para deixar o menu escondido ate que se clique no botão e revele o mesmo -->  
+        <div class="navbar-collapse collapse" id="barra-navegacao">
+          <ul class="nav navbar-nav navbar-right">
+            <!--<li><a href="index.html">Início</a></li>-->
+            
+            <!-- Botão do menu que expande outras opções do menu -->
+            <!--<li><a href="index.html">Drone</a></li>-->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Ações <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="admin-cadastrar-produto.html">Cadastrar produto</a></li>
+                <li><a href="#">Relatório de Drones</a></li>
+                <li role="separator" class="divider"></li>
+                <form class="col-md-12">
+                  <div class="form">
+                    <input type="text" class="form-control" placeholder="Procurar cliente">
+                  </div>
+                </form>
+                <br><br>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Sair da conta</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- FIM Barra de Navegação -->  
+
+   <section class="container">
+      <div class="page-header">
+        <h2>Cadastrar produto</h2>
+      </div>
+      <form class="form-horizontal">
+        <div class="row">
+          
+          <!-- Picture -->
+          <div class="col-md-2">
+            
+            <img src="imagens/cadastrar-produto/imagem-produto.svg" alt="Imagem do produto" class="img-thumbnail">
+
+          </div>
+
+          <!-- Info -->
+          <div class="col-md-10">
+            
+              <div class="form-group">
+                <label for="inputDescricao" class="col-sm-2 control-label">Descrição:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputDescricao" placeholder="Descrição">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputPassword3" class="col-sm-2 control-label">Tamanho:</label>
+                <div class="col-sm-4">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Tamanho">
+                </div>
+                <label for="inputPassword3" class="col-sm-1 control-label">Preço:</label>
+                <div class="col-sm-5">
+                  <input type="text" class="form-control" id="inputPassword3" placeholder="Tamanho">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="inputQtdade" class="col-sm-2 control-label">Quantidade:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputQtdade" placeholder="Quantidade por tamanho">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputFile" class="col-sm-2 control-label">Carregar imagem:</label>
+                <div class="col-sm-10">
+                  <input type="file" id="exampleInputFile" class="form-control">
+                </div>
+              </div>
+           
+              
+
+              <!--br><label for="exampleInputFile">Carregue uma imagem do produto:</label>
+              <input type="file" id="exampleInputFile"-->
+            </div>
+
+          </div>
+
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <input class="btn btn-primary pull-right" type="submit" value="Cadastrar">
+          </div>
+        </div>
+       </form>
+
+   </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
