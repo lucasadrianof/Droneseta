@@ -1,11 +1,10 @@
-package br.udesc.ceavi.dsw.droneseta.model.entity;
+    package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /** 
@@ -23,6 +22,7 @@ public class Produto implements Serializable {
     private String descricao;
     private String tamanho;
     private double preco;
+    private String urlFoto;
     private boolean disponivel = true;
 
     public Long getId() {
@@ -57,6 +57,14 @@ public class Produto implements Serializable {
         this.preco = preco;
     }
 
+    public String getUrlFoto() {
+        return urlFoto;
+    }
+
+    public void setUrlFoto(String urlFoto) {
+        this.urlFoto = urlFoto;
+    }
+    
     public boolean isDisponivel() {
         return disponivel;
     }

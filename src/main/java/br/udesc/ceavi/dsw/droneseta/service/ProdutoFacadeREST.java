@@ -36,41 +36,19 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
         super.create(entity);
     }
 
-    @PUT
-    @Path("{id}")
-    @Consumes(MediaType.APPLICATION_JSON)
-    public void edit(@PathParam("id") Long id, Produto entity) {
-        super.edit(entity);
-    }
-
-    @DELETE
-    @Path("{id}")
-    public void remove(@PathParam("id") Long id) {
-        super.remove(super.find(id));
-    }
-
     @GET
-    @Path("{id}")
+    @Path("disponiveis")
     @Produces(MediaType.APPLICATION_JSON)
-    public Produto find(@PathParam("id") Long id) {
-        return super.find(id);
-    }
+    public List<Produto> findAllDisponiveis() {
+        javax.persistence.criteria.CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
+        javax.persistence.criteria.CriteriaQuery cq = cb.createQuery();
+        javax.persistence.criteria.Root root = cq.from(Produto.class);
 
-    @GET
-    @Override
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Produto> findAll() {
-        javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
-        cq.select(cq.from(Produto.class));
-//        cq.having(exprsn); //adicionar a condição para somente produtos disponíveis
+        cq.select(root);
+        cq.where(cb.equal(root.get("disponivel"), true)); //somente disponíveis = "true"
+        System.out.println(cq);
+        
         return getEntityManager().createQuery(cq).getResultList();
-    }
-
-    @GET
-    @Path("{from}/{to}")
-    @Produces(MediaType.APPLICATION_JSON)
-    public List<Produto> findRange(@PathParam("from") Integer from, @PathParam("to") Integer to) {
-        return super.findRange(new int[]{from, to});
     }
 
     @GET
