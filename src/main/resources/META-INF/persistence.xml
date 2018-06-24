@@ -8,7 +8,7 @@
     <class>br.udesc.ceavi.dsw.droneseta.model.entity.Pedido</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.schema-generation.database.action" value="create-tables"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create-tables"/>
     </properties>
   </persistence-unit>
 </persistence>
