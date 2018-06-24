@@ -5,6 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Transient;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /** 
@@ -63,7 +64,7 @@ public class Produto implements Serializable {
     public void setDisponivel(boolean disponivel) {
         this.disponivel = disponivel;
     }
-    
+
     @Override
     public int hashCode() {
         int hash = 0;

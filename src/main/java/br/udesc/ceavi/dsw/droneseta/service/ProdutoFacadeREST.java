@@ -60,7 +60,10 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
     @Override
     @Produces(MediaType.APPLICATION_JSON)
     public List<Produto> findAll() {
-        return super.findAll();
+        javax.persistence.criteria.CriteriaQuery cq = getEntityManager().getCriteriaBuilder().createQuery();
+        cq.select(cq.from(Produto.class));
+//        cq.having(exprsn); //adicionar a condição para somente produtos disponíveis
+        return getEntityManager().createQuery(cq).getResultList();
     }
 
     @GET

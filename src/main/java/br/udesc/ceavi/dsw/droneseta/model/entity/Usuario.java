@@ -1,52 +1,52 @@
 package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
+import java.math.BigInteger;
+import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Entidade do Usuário
  * @author lucas.adriano
  */
 @Entity
-@XmlRootElement
 public class Usuario implements Serializable {
 
     private static final long serialVersionUID = 1L;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private BigInteger id;
     
-    private int cpf;
+    private String cpf;
     private String nome;
     private String senha;
     private Long cartaoCredito;
     private int tipo; //@TODO Mudar para enum: 1- Normal 2- Admin
     
-    @OneToOne
-    private Endereco Endereco;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Endereco endereco;
     
-    @OneToOne
-    private Endereco EnderecoEntrega;
+    @OneToOne(cascade = CascadeType.ALL)
+    private Endereco enderecoEntrega;
 
-    public Long getId() {
+    public BigInteger getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(BigInteger id) {
         this.id = id;
     }
     
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(int cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -83,19 +83,19 @@ public class Usuario implements Serializable {
     }
     
     public Endereco getEndereco() {
-        return Endereco;
+        return endereco;
     }
 
     public void setEndereco(Endereco Endereco) {
-        this.Endereco = Endereco;
+        this.endereco = Endereco;
     }
 
     public Endereco getEnderecoEntrega() {
-        return EnderecoEntrega;
+        return enderecoEntrega;
     }
 
     public void setEnderecoEntrega(Endereco EnderecoEntrega) {
-        this.EnderecoEntrega = EnderecoEntrega;
+        this.enderecoEntrega = EnderecoEntrega;
     }
     
      @Override

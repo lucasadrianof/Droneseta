@@ -8,14 +8,12 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
-import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  * Entidade do Pedido
  * @author lucas.adriano
  */
 @Entity
-@XmlRootElement
 public class Pedido implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -28,8 +26,8 @@ public class Pedido implements Serializable {
     @ManyToOne
     private Usuario Usuario;
     
-    @OneToMany(mappedBy = "Pedido")
-    private List<PedidoProduto> produtos;
+    @OneToMany
+    private List<Produto> produtos;
     
     public Long getId() {
         return id;
@@ -62,6 +60,14 @@ public class Pedido implements Serializable {
     public void setUsuario(Usuario Usuario) {
         this.Usuario = Usuario;
     }
+
+    public List<Produto> getProdutos() {
+        return produtos;
+    }
+
+    public void setProdutos(List<Produto> produtos) {
+        this.produtos = produtos;
+    }
     
     @Override
     public int hashCode() {
@@ -77,10 +83,7 @@ public class Pedido implements Serializable {
             return false;
         }
         Pedido other = (Pedido) object;
-        if ((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id))) {
-            return false;
-        }
-        return true;
+        return !((this.id == null && other.id != null) || (this.id != null && !this.id.equals(other.id)));
     }
 
     @Override

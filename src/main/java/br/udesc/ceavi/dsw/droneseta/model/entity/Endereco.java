@@ -5,20 +5,20 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
-import javax.xml.bind.annotation.XmlRootElement;
+import javax.persistence.ManyToOne;
 
 /**
  * Entidade do Endereço
  * @author lucas.adriano
  */
 @Entity
-@XmlRootElement
 public class Endereco implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
+    
     private Long sequencia;
     private String rua;
     private int numero;
@@ -26,9 +26,9 @@ public class Endereco implements Serializable {
     private String cidade;
     private String complemento;
     
-    @OneToOne
+    @ManyToOne
     private Usuario usuario;
-
+    
     public Long getSequencia() {
         return sequencia;
     }
@@ -76,7 +76,7 @@ public class Endereco implements Serializable {
     public void setComplemento(String complemento) {
         this.complemento = complemento;
     }
-    
+
     public Usuario getUsuario() {
         return usuario;
     }
@@ -106,5 +106,4 @@ public class Endereco implements Serializable {
     public String toString() {
         return "br.udesc.ceavi.dsw.droneseta.model.entity.Endereco[ id=" + sequencia + " ]";
     }
-    
 }
