@@ -9,6 +9,7 @@ import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -63,6 +64,25 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
        
         try {
             return (Usuario) getEntityManager().createQuery(cq).getSingleResult();
+        }
+        catch (javax.persistence.NoResultException Exception) {
+            return null;
+        }
+    }
+    
+    @GET
+    @Path("/{cpf}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Usuario getByCpf(@PathParam("cpf") String cpf) {
+        javax.persistence.criteria.CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
+        javax.persistence.criteria.CriteriaQuery cq = cb.createQuery();
+        javax.persistence.criteria.Root root = cq.from(Usuario.class);
+
+        cq.select(root);
+        cq.where(cb.equal(root.get("cpf"), cpf));
+       
+        try {
+            return (Usuario) getEntityManager().createQuery(cq).setMaxResults(1).getSingleResult();
         }
         catch (javax.persistence.NoResultException Exception) {
             return null;
