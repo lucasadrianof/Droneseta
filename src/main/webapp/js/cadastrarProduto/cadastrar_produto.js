@@ -1,8 +1,7 @@
-var url = "http://localhost:8080/droneseta/webresources/produtos/";
+var url = "http://localhost:36892/Droneseta/webresources/produtos/";
 
 $(function() {
     $('#cadastrar').click(function() {
-        alert('bindou o click');
         submit();
     });
 });
@@ -14,17 +13,16 @@ function submit() {
         quantidade : $('#inputQtdade').val(),
         urlImagem : $('inputUrl').val()
     };
-    debugger;
     $.ajax({
            url: url,
            type: 'POST',
            contentType: 'application/json',
            data: JSON.stringify(data),
-           success: function(data) {
-               console.log('deu boa cachoeira');
+           success: function() {
+               alert('Produto cadastrado com sucesso!');
            },
            error : function() {
-               alert(arguments);
+               //alert(arguments);
            }
        });
 }

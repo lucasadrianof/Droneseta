@@ -1,166 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Droneseta</title>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Droneseta</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    
-    <!-- Barra de Navegação -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <!-- button abaixo serve para criar o menu responsivo, logo, ao dominuir a tela, aparecerá o botão 'sanduíche' -->
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a href="index.html" class="navbar-brand">DRONESETA</a>
-        </div>
-        <!-- 'navbar-collapse' serve para deixar o menu escondido ate que se clique no botão e revele o mesmo -->  
-        <div class="navbar-collapse collapse" id="barra-navegacao">
-          <ul class="nav navbar-nav navbar-right">
-            <!--<li><a href="index.html">Início</a></li>-->
-            
-            <!-- Botão do menu que expande outras opções do menu -->
-            <li>
-              <a href="#"  style="color: #616161">
-                <span class="glyphicon glyphicon-shopping-cart"></span>
-              </a>
-            </li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Conta <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li><a href="login.html">Login</a></li>
-                <li><a href="cadastrar-cliente.html">Cadastrar</a></li>
-              </ul>
-            </li>
-            
-          </ul>
-        </div>
-      </div>
-    </nav>
-   <!-- FIM Barra de Navegação -->  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/cadastrarCliente/cadastrar_cliente.js"></script>
         
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <!-- Barra de Navegação -->
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <!-- button abaixo serve para criar o menu responsivo, logo, ao dominuir a tela, aparecerá o botão 'sanduíche' -->
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#barra-navegacao">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand">DRONESETA</a>
+                </div>
+                <!-- 'navbar-collapse' serve para deixar o menu escondido ate que se clique no botão e revele o mesmo -->  
+                <div class="navbar-collapse collapse" id="barra-navegacao">
+                    <ul class="nav navbar-nav navbar-right">
+                        <!--<li><a href="index.html">Início</a></li>-->
+
+                        <!-- Botão do menu que expande outras opções do menu -->
+                        <li>
+                            <a href="#"  style="color: #616161">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Conta <span class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="login.html">Login</a></li>
+                                <li><a href="cadastrar-cliente.html">Cadastrar</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- FIM Barra de Navegação -->  
+
         <section class="container">
             <div class="page-header">
                 <h2>Cadastre-se</h2>
             </div>
 
             <div class="row">
-              
-              <div class="col-md-6">
-                <form class="form">
-                  <h3>Dados</h3>
-                  <div class="form-group">
-                    <label for="exampleInputName2">Nome:</label>
-                    <input type="text" class="form-control" id="exampleInputName2" placeholder="Douglas Martins">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCpf2">CPF:</label>
-                    <input type="text" class="form-control" id="exampleInputCpf2" placeholder="11133366690">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCartao2">Cartão de Crédito:</label>
-                    <input type="text" class="form-control" id="exampleInputCartao2" placeholder="4444 5555 6666 3333">
-                  </div>
-                </form>
-              </div>
 
-              <div class="col-md-6">
-                
-                <form class="form">
-                  <h3>Endereço</h3>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="exampleInputRua2">Rua:</label>
-                      <input type="text" class="form-control" id="exampleInputRua2" placeholder="Rua José Vágner">
-                    </div>
-                    <div class="col-md-2">
-                      <label for="exampleInputNumero2">Número:</label>
-                      <input type="text" class="form-control" id="exampleInputNumero2" placeholder="1080">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="exampleInputComplemento2">Complemento:</label>
-                      <input type="text" class="form-control" id="exampleInputComplemento2" placeholder="Próximo ao...">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputBairro2">Bairro:</label>
-                    <input type="text" class="form-control" id="exampleInputBairro2" placeholder="Ponto Chic">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCidade">Cidade:</label>
-                    <input type="text" class="form-control" id="exampleInputCidade2" placeholder="Ibirama">
-                  </div>
-                </form>
+                <div class="col-md-6">
+                    <form class="form">
+                        <h3>Dados</h3>
+                        <div class="form-group">
+                            <label for="exampleInputName2">Nome:</label>
+                            <input type="text" class="form-control" id="inputNome" placeholder="Douglas Martins">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCpf2">CPF:</label>
+                            <input type="text" class="form-control" id="inputCpf" placeholder="11133366690">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCartao2">Cartão de Crédito:</label>
+                            <input type="text" class="form-control" id="inputCartao" placeholder="4444 5555 6666 3333">
+                        </div>
+                    </form>
+                </div>
 
-              </div>
+                <div class="col-md-6">
 
-            </div>
+                    <form class="form">
+                        <h3>Endereço</h3>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="exampleInputRua2">Rua:</label>
+                                <input type="text" class="form-control" id="inputRua" placeholder="Rua José Vágner">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="exampleInputNumero2">Número:</label>
+                                <input type="text" class="form-control" id="inputNumero" placeholder="1080">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="exampleInputComplemento2">Complemento:</label>
+                                <input type="text" class="form-control" id="inputComplemento" placeholder="Próximo ao...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputBairro2">Bairro:</label>
+                            <input type="text" class="form-control" id="inputBairro" placeholder="Ponto Chic">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputCidade">Cidade:</label>
+                            <input type="text" class="form-control" id="inputCidade" placeholder="Ibirama">
+                        </div>
+                    </form>
 
-            <div class="row">
-              
-              <div class="col-md-6">
-                
-                <form class="form">
-                  <h3>Endereço de Entrega</h3>
-                  <div class="row">
-                    <div class="col-md-6 form-group">
-                      <label for="exampleInputRua2">Rua:</label>
-                      <input type="text" class="form-control" id="exampleInputRua2" placeholder="Rua José Vágner">
-                    </div>
-                    <div class="col-md-2">
-                      <label for="exampleInputNumero2">Número:</label>
-                      <input type="text" class="form-control" id="exampleInputNumero2" placeholder="1080">
-                    </div>
-                    <div class="col-md-4">
-                      <label for="exampleInputComplemento2">Complemento:</label>
-                      <input type="text" class="form-control" id="exampleInputComplemento2" placeholder="Próximo ao...">
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputBairro2">Bairro:</label>
-                    <input type="text" class="form-control" id="exampleInputBairro2" placeholder="Ponto Chic">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputCidade">Cidade:</label>
-                    <input type="text" class="form-control" id="exampleInputCidade2" placeholder="Ibirama">
-                  </div>
-                </form>
-
-              </div>
+                </div>
 
             </div>
 
             <div class="row">
-              <div class="col-md-12">
-                <button type="button" class="btn btn-primary pull-right">Confirmar</button>
-              </div>
+
+                <div class="col-md-6">
+
+                    <form class="form">
+                        <h3>Endereço de Entrega</h3>
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <label for="inputRuaEntrega">Rua:</label>
+                                <input type="text" class="form-control" id="inputRuaEntrega" placeholder="Rua José Vágner">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputNumeroEntrega">Número:</label>
+                                <input type="text" class="form-control" id="inputNumeroEntrega" placeholder="1080">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputComplementoEntrega">Complemento:</label>
+                                <input type="text" class="form-control" id="inputComplementoEntrega" placeholder="Próximo ao...">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputBairroEntrega">Bairro:</label>
+                            <input type="text" class="form-control" id="inputBairroEntrega" placeholder="Ponto Chic">
+                        </div>
+                        <div class="form-group">
+                            <label for="inputCidadeEntrega">Cidade:</label>
+                            <input type="text" class="form-control" id="inputCidadeEntrega" placeholder="Ibirama">
+                        </div>
+                    </form>
+
+                </div>
+                
+                <div class="col-md-6">
+
+                    <form class="form">
+                        <h3>Cadastrar senha</h3>
+                        <div class="form-group">
+                            <label for="exampleInputBairro2">Insira uma senha:</label>
+                                <input type="password" class="form-control" id="inputSenha" placeholder="*******">
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <input type="submit" class="btn btn-primary pull-right" id="cadastrar" name="cadastrar" value="Cadastrar">
+                </div>
             </div>
 
         </section>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
