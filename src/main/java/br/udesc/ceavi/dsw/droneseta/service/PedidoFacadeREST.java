@@ -37,19 +37,12 @@ public class PedidoFacadeREST extends AbstractFacade<Pedido> {
         atualizaSituacaoProdutosPedido(entity);
     }
     
-    /**
-     * Atualiza a situação dos produtos relacionados ao pedido
-     */
-    private void atualizaSituacaoProdutosPedido(Pedido pedido) {
-        EntityManagerFactory emf    = javax.persistence.Persistence.createEntityManagerFactory("br.udesc.ceavi.dsw_droneseta_war_1.0-SNAPSHOTPU");
-        EntityManager entityManager = emf.createEntityManager();
-        
-        for (Produto produto : pedido.getProdutos()) {
-            Produto produtoAlt = entityManager.find(Produto.class, produto.getId());
-        
-            produtoAlt.setDisponivel(false);
-            entityManager.merge(produtoAlt);
-        }
+    @POST
+    @Path("confirmarPagamento")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void confirmarPagamento(Pedido entity) {
+        super.create(entity);
+        atualizaSituacaoProdutosPedido(entity);
     }
 
     @GET
@@ -69,5 +62,20 @@ public class PedidoFacadeREST extends AbstractFacade<Pedido> {
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+    
+    /**
+     * Atualiza a situação dos produtos relacionados ao pedido
+     */
+    private void atualizaSituacaoProdutosPedido(Pedido pedido) {
+        EntityManagerFactory emf    = javax.persistence.Persistence.createEntityManagerFactory("br.udesc.ceavi.dsw_droneseta_war_1.0-SNAPSHOTPU");
+        EntityManager entityManager = emf.createEntityManager();
+        
+        for (Produto produto : pedido.getProdutos()) {
+            Produto produtoAlt = entityManager.find(Produto.class, produto.getId());
+        
+            produtoAlt.setDisponivel(false);
+            entityManager.merge(produtoAlt);
+        }
     }
 }

@@ -8,6 +8,9 @@
     <title>Droneseta</title>
 
     <!-- Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/cadastrarProduto/cadastrar_produto.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -89,11 +92,11 @@
               <div class="form-group">
                 <label for="inputPassword3" class="col-sm-2 control-label">Tamanho:</label>
                 <div class="col-sm-4">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Tamanho">
+                  <input type="text" class="form-control" id="inputTamanho" placeholder="Tamanho">
                 </div>
                 <label for="inputPassword3" class="col-sm-1 control-label">Preço:</label>
                 <div class="col-sm-5">
-                  <input type="text" class="form-control" id="inputPassword3" placeholder="Tamanho">
+                  <input type="text" class="form-control" id="inputPreco" placeholder="Tamanho">
                 </div>
               </div>
               <div class="form-group">
@@ -105,7 +108,7 @@
               <div class="form-group">
                 <label for="exampleInputFile" class="col-sm-2 control-label">Carregar imagem:</label>
                 <div class="col-sm-10">
-                  <input type="file" id="exampleInputFile" class="form-control">
+                  <input type="text" id="inputUrl" class="form-control">
                 </div>
               </div>
            
@@ -117,10 +120,10 @@
 
           </div>
 
-        </div>
+        <!--</div>-->
         <div class="row">
           <div class="col-md-12">
-            <input class="btn btn-primary pull-right" type="submit" value="Cadastrar">
+              <input class="btn btn-primary pull-right" type="submit" id="cadastrar" value="Cadastrar">
           </div>
         </div>
        </form>
@@ -128,8 +131,6 @@
    </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
