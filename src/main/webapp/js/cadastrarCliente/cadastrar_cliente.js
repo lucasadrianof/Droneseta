@@ -52,12 +52,3 @@ function submit() {
         }
     });
 }
-
-
-//        rua : $('#inputRua').val(),
-//        numero : $('#inputNumero').val(),
-//        complemento : $('#inputComplemento').val(),
-//        bairro : $('#inputBairro').val(),
-//        cidade : $('#inputCidade').val(),
-//        
-//      

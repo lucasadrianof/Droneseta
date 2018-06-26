@@ -6,6 +6,7 @@ import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -85,7 +86,7 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
             return (Usuario) getEntityManager().createQuery(cq).setMaxResults(1).getSingleResult();
         }
         catch (javax.persistence.NoResultException Exception) {
-            return null;
+            return new Usuario();
         }
     }
 
