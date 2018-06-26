@@ -5,6 +5,7 @@ import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
@@ -53,6 +54,22 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
     @Produces(MediaType.TEXT_PLAIN)
     public String countREST() {
         return String.valueOf(super.count());
+    }
+    
+    @GET
+    @Path("maisvendidos")
+    @Produces(MediaType.APPLICATION_JSON)
+    public List<Produto> getMaisVendidos() {
+        Query query = em.createQuery(""
+            + "SELECT p.descricao, "
+                   + "p.preco, "
+                   + "p.tamanho, "
+                   + "p.urlFoto "
+              + "FROM Produto p "
+          + "GROUP BY p.descricao, p.preco, p.tamanho, p.urlFoto", Produto.class);
+        query.setMaxResults(5);
+        
+        return query.getResultList();
     }
     
     @Override

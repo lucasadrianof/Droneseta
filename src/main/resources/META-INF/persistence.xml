@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
   <persistence-unit name="br.udesc.ceavi.dsw_droneseta_war_1.0-SNAPSHOTPU" transaction-type="JTA">
-    <jta-data-source>java:app/JNDI2</jta-data-source>
-    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <jta-data-source>java:app/Postgres Local</jta-data-source>
+    <class>br.udesc.ceavi.dsw.droneseta.model.entity.Endereco</class>
+    <class>br.udesc.ceavi.dsw.droneseta.model.entity.Produto</class>
+    <class>br.udesc.ceavi.dsw.droneseta.model.entity.Usuario</class>
+    <class>br.udesc.ceavi.dsw.droneseta.model.entity.Pedido</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
-      <property name="javax.persistence.schema-generation.database.action" value="create"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create-tables"/>
     </properties>
   </persistence-unit>
 </persistence>

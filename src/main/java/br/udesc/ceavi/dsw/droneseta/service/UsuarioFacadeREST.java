@@ -47,6 +47,27 @@ public class UsuarioFacadeREST extends AbstractFacade<Usuario> {
     public String countREST() {
         return String.valueOf(super.count());
     }
+    
+    @POST
+    @Path("login")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Usuario doLogin(Usuario usuario) {
+        javax.persistence.criteria.CriteriaBuilder cb = getEntityManager().getCriteriaBuilder();
+        javax.persistence.criteria.CriteriaQuery cq = cb.createQuery();
+        javax.persistence.criteria.Root root = cq.from(Usuario.class);
+
+        cq.select(root);
+        cq.where(cb.equal(root.get("cpf"), usuario.getCpf()));
+        cq.where(cb.equal(root.get("senha"), usuario.getSenha()));
+       
+        try {
+            return (Usuario) getEntityManager().createQuery(cq).getSingleResult();
+        }
+        catch (javax.persistence.NoResultException Exception) {
+            return null;
+        }
+    }
 
     @Override
     protected EntityManager getEntityManager() {
