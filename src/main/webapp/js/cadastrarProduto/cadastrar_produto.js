@@ -1,4 +1,4 @@
-var url = "http://localhost:36892/Droneseta/webresources/produtos/";
+var url = "http://localhost:8080/Droneseta/webresources/produtos/";
 
 $(function() {
     $('#cadastrar').click(function() {

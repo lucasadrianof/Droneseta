@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-var url = "http://localhost:36892/Droneseta/webresources/usuarios/";
+var url = "http://localhost:8080/Droneseta/webresources/usuarios/";
 
 $(function () {
     $("#cadastrar").click(function () {
@@ -16,7 +16,7 @@ function submit() {
         cpf: $('#inputCpf').val(),
         nome: $('#inputNome').val(),
         senha: $('#inputSenha').val(),
-        numeroCartao: $('#inputCartao').val(),
+        cartaoCredito: $('#inputCartao').val(),
 
         endereco: {
 
