@@ -38,11 +38,12 @@ public class PedidoFacadeREST extends AbstractFacade<Pedido> {
     }
     
     @POST
-    @Path("confirmarPagamento")
+    @Path("confirmarpagamento")
     @Consumes(MediaType.APPLICATION_JSON)
     public void confirmarPagamento(Pedido entity) {
-        super.create(entity);
-        atualizaSituacaoProdutosPedido(entity);
+        Pedido pedidoAConfirmar = find(entity.getId());
+        pedidoAConfirmar.setSituacao(2);
+        em.merge(pedidoAConfirmar);
     }
 
     @GET
