@@ -1,0 +1,9 @@
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/service/UsuarioFacadeREST.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/service/PedidoFacadeREST.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/model/entity/Produto.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/model/entity/Pedido.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/service/ProdutoFacadeREST.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/model/entity/Usuario.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/model/entity/Endereco.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/service/ApplicationConfig.java
+/home/douglas/Documents/Repositorios/GitHub/Droneseta/src/main/java/br/udesc/ceavi/dsw/droneseta/service/AbstractFacade.java
