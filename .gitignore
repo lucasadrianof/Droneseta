@@ -1,3 +1,8 @@
 /target/
 src/main/resources/META-INF/persistence.xml
 src/main/webapp/WEB-INF/glassfish-resources.xml
+
+# Node
+node_modules
+*.log
+.nvm
