@@ -34,7 +34,7 @@ const styles = {
     }
 };
 
-function ProductRegister(props) {
+function RegisterProduct(props) {
 
     //http://localhost:8080/JavaDroneseta/webresources/produtos/disponiveis
     // function get() {
@@ -119,7 +119,27 @@ function ProductRegister(props) {
 
                         </CardBody>
                         <CardFooter>
-                            <Button color="primary" id="btnCadastrar" >Cadastrar</Button>
+                            <Button color="primary" id="btnCadastrar" onClick={function () {
+
+                                    let url = "http://localhost:8080/JavaDroneseta/webresources/produtos/";
+
+                                    let data = {
+                                        descricao: document.getElementById("#inputDescricao").value,
+                                        preco: document.getElementById("#inputPreco").value,
+                                        tamanho: document.getElementById("#inputTamanho").value,
+                                        urlfoto: document.getElementById("#inputUrl").value
+                                    };
+
+                                    fetch(url, {
+                                        headers: {
+                                            'Accept': 'application/json',
+                                            'Content-Type': 'application/json'
+                                        },
+                                        method: "POST",
+                                        body: JSON.stringify(data)
+                                    });
+                                }
+                            }>Cadastrar</Button>
                         </CardFooter>
                     </Card>
                 </GridItem>
@@ -151,5 +171,5 @@ function ProductRegister(props) {
     );
 }
 
-export default withStyles(styles)(ProductRegister);
+export default withStyles(styles)(RegisterProduct);
 

@@ -14,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductRegister.jsx" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/ProductRegister/ProductRegister.jsx">
+      <file leaf-file-name="RegisterUser.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="740">
-              <caret line="121" column="69" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
+            <state relative-caret-position="808">
+              <caret line="278" column="34" lean-forward="true" selection-start-line="241" selection-start-column="31" selection-end-line="278" selection-end-column="34" />
               <folding>
                 <element signature="e#59#120#0" expanded="true" />
                 <element signature="e#238#290#0" expanded="true" />
@@ -27,24 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/Login/Login.jsx">
+      <file leaf-file-name="RegisterProduct.jsx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="85" column="48" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="48" />
-              <folding>
-                <element signature="e#59#120#0" expanded="true" />
-                <element signature="e#238#290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserProfile.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1079">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="587">
+              <caret line="141" column="48" lean-forward="true" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
               <folding>
                 <element signature="e#59#120#0" expanded="true" />
                 <element signature="e#238#290#0" expanded="true" />
@@ -75,9 +62,12 @@
         <option value="$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx" />
         <option value="$PROJECT_DIR$/src/views/TableList/TableList.jsx" />
         <option value="$PROJECT_DIR$/src/views/Login/Login.jsx" />
-        <option value="$PROJECT_DIR$/src/routes/dashboard.jsx" />
-        <option value="$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProductRegister/ProductRegister.jsx" />
+        <option value="$PROJECT_DIR$/src/views/Icons/RegisterUser.jsx" />
+        <option value="$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx" />
+        <option value="$PROJECT_DIR$/src/routes/dashboard.jsx" />
+        <option value="$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx" />
+        <option value="$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx" />
       </list>
     </option>
   </component>
@@ -138,6 +128,12 @@
               <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="layouts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="routes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -157,6 +153,13 @@
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
               <item name="Login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -164,14 +167,14 @@
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="ProductRegister" type="462c0819:PsiDirectoryNode" />
+              <item name="RegisterProduct" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Typography" type="462c0819:PsiDirectoryNode" />
+              <item name="RegisterUser" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
@@ -217,16 +220,15 @@
       <option name="presentableId" value="Default" />
       <updated>1530277685163</updated>
       <workItem from="1530277688099" duration="3419000" />
-      <workItem from="1530287032439" duration="15135000" />
+      <workItem from="1530287032439" duration="21417000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18554000" />
+    <option name="totallyTimeSpent" value="24836000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -348,30 +350,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/layouts/Dashboard/Dashboard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
           <caret line="103" column="12" selection-start-line="103" selection-start-column="12" selection-end-line="103" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2006">
-          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -416,19 +398,30 @@
         <state relative-caret-position="-1198" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/dashboard.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/Login/Login.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="62" column="4" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="62" selection-end-column="4" />
+        <state relative-caret-position="-1147">
+          <caret selection-end-line="34" selection-end-column="2" />
           <folding>
-            <element signature="e#499#557#0" expanded="true" />
+            <element signature="e#59#120#0" expanded="true" />
+            <element signature="e#238#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/layouts/Dashboard/Dashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="60" column="30" selection-start-line="60" selection-start-column="30" selection-end-line="60" selection-end-column="30" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/variables/charts.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1785">
+        <state relative-caret-position="-408">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -444,10 +437,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/dashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
+          <folding>
+            <element signature="e#499#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1079">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="1063">
+          <caret line="237" column="65" selection-start-line="237" selection-start-column="65" selection-end-line="237" selection-end-column="65" />
           <folding>
             <element signature="e#59#120#0" expanded="true" />
             <element signature="e#238#290#0" expanded="true" />
@@ -455,10 +471,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Login/Login.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="85" column="48" selection-start-line="85" selection-start-column="46" selection-end-line="85" selection-end-column="48" />
+        <state relative-caret-position="808">
+          <caret line="278" column="34" lean-forward="true" selection-start-line="241" selection-start-column="31" selection-end-line="278" selection-end-column="34" />
           <folding>
             <element signature="e#59#120#0" expanded="true" />
             <element signature="e#238#290#0" expanded="true" />
@@ -466,10 +482,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/ProductRegister/ProductRegister.jsx">
+    <entry file="file://$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="740">
-          <caret line="121" column="69" selection-start-line="121" selection-start-column="69" selection-end-line="121" selection-end-column="69" />
+        <state relative-caret-position="587">
+          <caret line="141" column="48" lean-forward="true" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
           <folding>
             <element signature="e#59#120#0" expanded="true" />
             <element signature="e#238#290#0" expanded="true" />

@@ -39,107 +39,208 @@ function UserProfile(props) {
   const { classes } = props;
   return (
     <div>
-      <Grid container>
-          <GridItem xs={12} sm={12} md={2}>
-          </GridItem>
-        <GridItem xs={12} sm={12} md={8}>
-          <Card>
-            <CardHeader color="primary">
-              <h4 className={classes.cardTitleWhite}>Editar Perfil</h4>
+        <Grid container>
+            <GridItem xs={12} sm={12} md={4}></GridItem>
+            <GridItem xs={12} sm={12} md={4}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Dados Pessoais</h4>
 
-            </CardHeader>
-            <CardBody>
-              <Grid container>
-                <GridItem xs={12} sm={12} md={8}>
-                  <CustomInput
-                    labelText="Nome"
-                    id="username"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="CPF"
-                    id="email-address"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-              </Grid>
-              <Grid container>
-                  <GridItem xs={12} sm={12} md={12}>
-                      <CustomInput
-                          labelText="Cartão de Crédito"
-                          id="city"
-                          formControlProps={{
-                              fullWidth: true
-                          }}
-                      />
-                  </GridItem>
-              </Grid>
-              <Grid container>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Bairro"
-                    id="city"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                <GridItem xs={12} sm={12} md={4}>
-                  <CustomInput
-                    labelText="Cidade"
-                    id="country"
-                    formControlProps={{
-                      fullWidth: true
-                    }}
-                  />
-                </GridItem>
-                  <GridItem xs={12} sm={12} md={4}>
-                      <CustomInput
-                          labelText="Estado"
-                          id="country"
-                          formControlProps={{
-                              fullWidth: true
-                          }}
-                      />
-                  </GridItem>
-              </Grid>
+                    </CardHeader>
+                    <CardBody>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Nome"
+                                    id="nome"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="CPF"
+                                    id="city"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={12}>
+                                <CustomInput
+                                    labelText="CPF"
+                                    id="city"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
 
-            </CardBody>
-            <CardFooter>
-              <Button color="primary">Atualizar Perfil</Button>
-            </CardFooter>
-          </Card>
-        </GridItem>
-          <GridItem xs={12} sm={12} md={2}>
-          </GridItem>
-        {/*<GridItem xs={12} sm={12} md={4}>*/}
-          {/*<Card profile>*/}
+                    </CardBody>
+
+                </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={4}></GridItem>
+
+            {/*<GridItem xs={12} sm={12} md={4}>*/}
+            {/*<Card profile>*/}
             {/*<CardAvatar profile>*/}
-              {/*<a href="#pablo" onClick={e => e.preventDefault()}>*/}
-                {/*<img src={avatar} alt="..." />*/}
-              {/*</a>*/}
+            {/*<a href="#pablo" onClick={e => e.preventDefault()}>*/}
+            {/*<img src={avatar} alt="..." />*/}
+            {/*</a>*/}
             {/*</CardAvatar>*/}
             {/*<CardBody profile>*/}
-              {/*<h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>*/}
-              {/*<h4 className={classes.cardTitle}>Alec Thompson</h4>*/}
-              {/*<p className={classes.description}>*/}
-                {/*Don't be scared of the truth because we need to restart the*/}
-                {/*human foundation in truth And I love you like Kanye loves Kanye*/}
-                {/*I love Rick Owens’ bed design but the back is...*/}
-              {/*</p>*/}
-              {/*<Button color="primary" round>*/}
-                {/*Follow*/}
-              {/*</Button>*/}
+            {/*<h6 className={classes.cardCategory}>CEO / CO-FOUNDER</h6>*/}
+            {/*<h4 className={classes.cardTitle}>Alec Thompson</h4>*/}
+            {/*<p className={classes.description}>*/}
+            {/*Don't be scared of the truth because we need to restart the*/}
+            {/*human foundation in truth And I love you like Kanye loves Kanye*/}
+            {/*I love Rick Owens’ bed design but the back is...*/}
+            {/*</p>*/}
+            {/*<Button color="primary" round>*/}
+            {/*Follow*/}
+            {/*</Button>*/}
             {/*</CardBody>*/}
-          {/*</Card>*/}
-        {/*</GridItem>*/}
-      </Grid>
+            {/*</Card>*/}
+            {/*</GridItem>*/}
+        </Grid>
+        <Grid container>
+            <GridItem xs={12} sm={12} md={6}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Endereço</h4>
+
+                    </CardHeader>
+                    <CardBody>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Rua"
+                                    id="rua"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={2}>
+                                <CustomInput
+                                    labelText="Número"
+                                    id="numero"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <CustomInput
+                                    labelText="Complemento"
+                                    id="complemento"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Bairro"
+                                    id="bairro"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Cidade"
+                                    id="cidade"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
+
+                    </CardBody>
+                </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={6}>
+                <Card>
+                    <CardHeader color="primary">
+                        <h4 className={classes.cardTitleWhite}>Endereço de Entrega</h4>
+
+                    </CardHeader>
+                    <CardBody>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Rua"
+                                    id="rua"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={2}>
+                                <CustomInput
+                                    labelText="Número"
+                                    id="numero"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={4}>
+                                <CustomInput
+                                    labelText="Complemento"
+                                    id="complemento"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
+                        <Grid container>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Bairro"
+                                    id="bairro"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                            <GridItem xs={12} sm={12} md={6}>
+                                <CustomInput
+                                    labelText="Cidade"
+                                    id="cidade"
+                                    formControlProps={{
+                                        fullWidth: true
+                                    }}
+                                />
+                            </GridItem>
+                        </Grid>
+
+                    </CardBody>
+                </Card>
+            </GridItem>
+        </Grid>
+        <Grid container>
+            <GridItem xs={12} sm={12} md={5}></GridItem>
+            <GridItem xs={12} sm={12} md={2}>
+                <Card>
+                    <CardFooter>
+                        <Button color="primary" fullWidth>Alterar</Button>
+                    </CardFooter>
+                </Card>
+            </GridItem>
+            <GridItem xs={12} sm={12} md={5}></GridItem>
+        </Grid>
     </div>
   );
 }

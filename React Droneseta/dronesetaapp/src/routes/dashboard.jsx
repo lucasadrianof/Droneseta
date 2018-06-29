@@ -11,9 +11,9 @@ import Unarchive from "@material-ui/icons/Unarchive";
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
 import Login from "views/Login/Login.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/ProductRegister/ProductRegister.jsx";
+import RegisterProduct from "views/RegisterProduct/RegisterProduct.jsx";
 import Typography from "views/Typography/Typography.jsx";
-import Icons from "views/Icons/Icons.jsx";
+import RegisterUser from "views/RegisterUser/RegisterUser.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
 import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.jsx";
@@ -22,7 +22,7 @@ const dashboardRoutes = [
   {
     path: "/dashboard",
     sidebarName: "Principal",
-    navbarName: "Material Dashboard",
+    navbarName: "Página Principal",
     icon: Dashboard,
     component: DashboardPage
   },
@@ -43,16 +43,16 @@ const dashboardRoutes = [
   {
     path: "/ProductRegister",
     sidebarName: "Cadastrar Produto",
-    navbarName: "Table List",
+    navbarName: "Registarr",
     icon: ContentPaste,
-    component: TableList
+    component: RegisterProduct
   },
   {
-      path: "/icons",
+      path: "/RegisterUser",
       sidebarName: "Cadastrar Cliente",
-      navbarName: "Icons",
+      navbarName: "Cadastrar Cliente",
       icon: ContentPaste,
-      component: Icons
+      component: RegisterUser
   },
   {
     path: "/typography",
