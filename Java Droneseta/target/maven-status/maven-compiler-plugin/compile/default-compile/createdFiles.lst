@@ -1,9 +1,0 @@
-br\udesc\ceavi\dsw\droneseta\model\entity\Pedido.class
-br\udesc\ceavi\dsw\droneseta\service\AbstractFacade.class
-br\udesc\ceavi\dsw\droneseta\service\PedidoFacadeREST.class
-br\udesc\ceavi\dsw\droneseta\model\entity\Usuario.class
-br\udesc\ceavi\dsw\droneseta\service\ApplicationConfig.class
-br\udesc\ceavi\dsw\droneseta\model\entity\Produto.class
-br\udesc\ceavi\dsw\droneseta\service\UsuarioFacadeREST.class
-br\udesc\ceavi\dsw\droneseta\model\entity\Endereco.class
-br\udesc\ceavi\dsw\droneseta\service\ProdutoFacadeREST.class

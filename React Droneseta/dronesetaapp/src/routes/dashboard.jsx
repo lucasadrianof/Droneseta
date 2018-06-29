@@ -9,8 +9,9 @@ import Notifications from "@material-ui/icons/Notifications";
 import Unarchive from "@material-ui/icons/Unarchive";
 // core components/views
 import DashboardPage from "views/Dashboard/Dashboard.jsx";
+import Login from "views/Login/Login.jsx";
 import UserProfile from "views/UserProfile/UserProfile.jsx";
-import TableList from "views/TableList/TableList.jsx";
+import TableList from "views/ProductRegister/ProductRegister.jsx";
 import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
@@ -25,6 +26,13 @@ const dashboardRoutes = [
     icon: Dashboard,
     component: DashboardPage
   },
+{
+    path: "/login",
+    sidebarName: "Login",
+    navbarName: "Login",
+    icon: Person,
+    component: Login
+},
   {
     path: "/user",
     sidebarName: "Perfil",
@@ -33,40 +41,47 @@ const dashboardRoutes = [
     component: UserProfile
   },
   {
-    path: "/table",
-    sidebarName: "Table List",
+    path: "/ProductRegister",
+    sidebarName: "Cadastrar Produto",
     navbarName: "Table List",
     icon: ContentPaste,
     component: TableList
   },
   {
+      path: "/icons",
+      sidebarName: "Cadastrar Cliente",
+      navbarName: "Icons",
+      icon: ContentPaste,
+      component: Icons
+  },
+  {
     path: "/typography",
-    sidebarName: "Typography",
+    sidebarName: "Produtos + vendidos",
     navbarName: "Typography",
-    icon: LibraryBooks,
+    icon: BubbleChart,
     component: Typography
   },
-  // {
-  //   path: "/icons",
-  //   sidebarName: "Icons",
-  //   navbarName: "Icons",
-  //   icon: BubbleChart,
-  //   component: Icons
-  // },
-  // {
-  //   path: "/maps",
-  //   sidebarName: "Maps",
-  //   navbarName: "Map",
-  //   icon: LocationOn,
-  //   component: Maps
-  // },
-  // {
-  //   path: "/notifications",
-  //   sidebarName: "Notifications",
-  //   navbarName: "Notifications",
-  //   icon: Notifications,
-  //   component: NotificationsPage
-  // },
+  {
+    path: "/maps",
+    sidebarName: "Lista de Compras",
+    navbarName: "Map",
+    icon: LibraryBooks,
+    component: Maps
+  },
+{
+    path: "/notifications",
+    sidebarName: "Carrinho",
+    navbarName: "Notifications",
+    icon: Notifications,
+    component: NotificationsPage
+},
+  {
+    path: "/notifications",
+    sidebarName: "Registro de Viagens",
+    navbarName: "Notifications",
+    icon: Notifications,
+    component: NotificationsPage
+  },
   // {
   //   path: "/upgrade-to-pro",
   //   sidebarName: "Upgrade To PRO",

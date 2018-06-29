@@ -35,6 +35,7 @@ const styles = {
 };
 
 function UserProfile(props) {
+
   const { classes } = props;
   return (
     <div>

@@ -6,3 +6,4 @@ src/main/webapp/WEB-INF/glassfish-resources.xml
 node_modules
 *.log
 .nvm
+/JavaDroneseta/target/
