@@ -63,9 +63,9 @@ class Dashboard extends React.Component {
                 <CardIcon color="warning">
                   <ContentCopy />
                 </CardIcon>
-                <p className={classes.cardCategory}>Used Space</p>
+                <p className={classes.cardCategory}>Valor:</p>
                 <h3 className={classes.cardTitle}>
-                  49/50 <small>GB</small>
+                    <small>R$: </small> 99.90
                 </h3>
               </CardHeader>
               <CardFooter stats>
@@ -86,9 +86,9 @@ class Dashboard extends React.Component {
                         <CardIcon color="warning">
                             <ContentCopy />
                         </CardIcon>
-                        <p className={classes.cardCategory}>Used Space</p>
+                        <p className={classes.cardCategory}>Valor:</p>
                         <h3 className={classes.cardTitle}>
-                            49/50 <small>GB</small>
+                            <small>R$: </small> 99.90
                         </h3>
                     </CardHeader>
                     <CardFooter stats>
