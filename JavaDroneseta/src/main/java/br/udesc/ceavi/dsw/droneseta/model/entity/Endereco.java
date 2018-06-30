@@ -1,6 +1,7 @@
 package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -18,12 +19,20 @@ public class Endereco implements Serializable {
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    
     private Long sequencia;
+    
+    @Column(nullable = false)
     private String rua;
+    
+    @Column(nullable = false)
     private int numero;
+    
+    @Column(nullable = false)
     private String bairro;
+    
+    @Column(nullable = false)
     private String cidade;
+    
     private String complemento;
     
     @ManyToOne

@@ -3,6 +3,7 @@ package br.udesc.ceavi.dsw.droneseta.model.entity;
 import java.io.Serializable;
 import java.math.BigInteger;
 import javax.persistence.CascadeType;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,10 +23,18 @@ public class Usuario implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private BigInteger id;
     
+    @Column(nullable = false)
     private String cpf;
+    
+    @Column(nullable = false)
     private String nome;
+    
+    @Column(nullable = false)
     private String senha;
+    
     private Long cartaoCredito;
+    
+    @Column(nullable = false)
     private int tipo; //@TODO Mudar para enum: 1- Normal 2- Admin
     
     @OneToOne(cascade = CascadeType.ALL)

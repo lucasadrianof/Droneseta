@@ -2,6 +2,7 @@ package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
 import java.util.List;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -20,7 +21,11 @@ public class Pedido implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    @Column(nullable = false)
     private double valor;
+    
+    @Column(nullable = false)
     private int situacao; //@TODO Enum: 1- Aguardando Pagamento, 2-Pagamento Confirmado
     
     @ManyToOne

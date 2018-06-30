@@ -1,7 +1,6 @@
-    package br.udesc.ceavi.dsw.droneseta.model.entity;
+package br.udesc.ceavi.dsw.droneseta.model.entity;
 
 import java.io.Serializable;
-import javax.ejb.Stateless;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,13 +17,24 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class Produto implements Serializable {
 
     private static final long serialVersionUID = 1L;
+    
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    @Column(nullable = false)
     private String descricao;
+    
+    @Column(nullable = false)
     private String tamanho;
+    
+    @Column(nullable = false)
     private double preco;
+    
+    @Column(length = 1000)
     private String urlFoto;
+    
+    @Column(nullable = false)
     private boolean disponivel = true;
 
     public Long getId() {
@@ -96,5 +106,4 @@ public class Produto implements Serializable {
     public String toString() {
         return "br.udesc.ceavi.dsw.droneseta.model.entity.Produto[ id=" + id + " ]";
     }
-    
 }
