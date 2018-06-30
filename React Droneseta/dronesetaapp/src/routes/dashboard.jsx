@@ -43,7 +43,7 @@ const dashboardRoutes = [
   {
     path: "/ProductRegister",
     sidebarName: "Cadastrar Produto",
-    navbarName: "Registarr",
+    navbarName: "Registrar",
     icon: ContentPaste,
     component: RegisterProduct
   },
@@ -75,13 +75,13 @@ const dashboardRoutes = [
     icon: Notifications,
     component: NotificationsPage
 },
-  {
-    path: "/notifications",
-    sidebarName: "Registro de Viagens",
-    navbarName: "Notifications",
-    icon: Notifications,
-    component: NotificationsPage
-  },
+{
+path: "/notifications",
+sidebarName: "Registro de Viagens",
+navbarName: "Notifications",
+icon: Notifications,
+component: NotificationsPage
+},
   // {
   //   path: "/upgrade-to-pro",
   //   sidebarName: "Upgrade To PRO",

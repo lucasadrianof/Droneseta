@@ -17,8 +17,8 @@
       <file leaf-file-name="RegisterUser.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="278" column="34" lean-forward="true" selection-start-line="241" selection-start-column="31" selection-end-line="278" selection-end-column="34" />
+            <state relative-caret-position="451">
+              <caret line="34" column="2" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="2" />
               <folding>
                 <element signature="e#59#120#0" expanded="true" />
                 <element signature="e#238#290#0" expanded="true" />
@@ -30,11 +30,42 @@
       <file leaf-file-name="RegisterProduct.jsx" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="587">
-              <caret line="141" column="48" lean-forward="true" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
+            <state relative-caret-position="1411">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
                 <element signature="e#59#120#0" expanded="true" />
-                <element signature="e#238#290#0" expanded="true" />
+                <element signature="e#240#292#0" expanded="true" />
+                <element signature="e#578#630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="App.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/App.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="dashboard.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/routes/dashboard.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="451">
+              <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+              <folding>
+                <element signature="e#499#557#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dashboard.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="54" selection-start-line="54" selection-end-line="54" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#291#348#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -59,15 +90,15 @@
         <option value="$PROJECT_DIR$/src/layouts/Dashboard/Dashboard.jsx" />
         <option value="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" />
         <option value="$PROJECT_DIR$/src/components/Header/HeaderLinks.jsx" />
-        <option value="$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx" />
         <option value="$PROJECT_DIR$/src/views/TableList/TableList.jsx" />
         <option value="$PROJECT_DIR$/src/views/Login/Login.jsx" />
         <option value="$PROJECT_DIR$/src/views/ProductRegister/ProductRegister.jsx" />
         <option value="$PROJECT_DIR$/src/views/Icons/RegisterUser.jsx" />
         <option value="$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx" />
-        <option value="$PROJECT_DIR$/src/routes/dashboard.jsx" />
         <option value="$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx" />
+        <option value="$PROJECT_DIR$/src/routes/dashboard.jsx" />
         <option value="$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx" />
+        <option value="$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx" />
       </list>
     </option>
   </component>
@@ -99,7 +130,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -116,82 +146,25 @@
               <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
               <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="layouts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="variables" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="RegisterProduct" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="RegisterUser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="dronesetaapp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="dronesetaapp" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-              <item name="UserProfile" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Card" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ReactDroneseta2/dronesetaapp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -221,23 +194,24 @@
       <updated>1530277685163</updated>
       <workItem from="1530277688099" duration="3419000" />
       <workItem from="1530287032439" duration="21417000" />
+      <workItem from="1530382815627" duration="8428000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24836000" />
+    <option name="totallyTimeSpent" value="33264000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
+      <window_info anchor="bottom" id="TypeScript" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.51859725" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -248,6 +222,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.51859725" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,10 +233,33 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4726">
+          <caret line="278" column="34" lean-forward="true" selection-start-line="241" selection-start-column="31" selection-end-line="278" selection-end-column="34" />
+          <folding>
+            <element signature="e#59#120#0" expanded="true" />
+            <element signature="e#238#290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2397">
+          <caret line="141" column="48" lean-forward="true" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
+          <folding>
+            <element signature="e#59#120#0" expanded="true" />
+            <element signature="e#240#292#0" expanded="true" />
+            <element signature="e#578#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -360,9 +358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Login/Login.xsl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Login/Login.xsl" />
     <entry file="file://$PROJECT_DIR$/src/views/Typography/Typography.jsx">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -375,15 +371,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/cadastrarProduto.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/cadastrarProduto.js" />
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -421,11 +409,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/variables/charts.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state relative-caret-position="-408" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/variables/general.jsx">
@@ -436,29 +420,6 @@
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="88" column="35" lean-forward="true" selection-start-line="88" selection-start-column="35" selection-end-line="88" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/routes/dashboard.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="24" column="33" selection-start-line="24" selection-start-column="33" selection-end-line="24" selection-end-column="33" />
-          <folding>
-            <element signature="e#499#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.css">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/views/UserProfile/UserProfile.jsx">
       <provider selected="true" editor-type-id="text-editor">
@@ -471,10 +432,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/styles/withStyles.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="816">
+          <caret line="53" column="24" selection-start-line="53" selection-start-column="24" selection-end-line="53" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/routes/dashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451">
+          <caret line="75" column="20" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="20" />
+          <folding>
+            <element signature="e#499#557#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@material-ui/core/SvgIcon/SvgIcon.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/Dashboard/Dashboard.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#291#348#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/RegisterUser/RegisterUser.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="278" column="34" lean-forward="true" selection-start-line="241" selection-start-column="31" selection-end-line="278" selection-end-column="34" />
+        <state relative-caret-position="451">
+          <caret line="34" column="2" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="2" />
           <folding>
             <element signature="e#59#120#0" expanded="true" />
             <element signature="e#238#290#0" expanded="true" />
@@ -482,13 +478,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@babel/runtime/core-js/array/every.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/@babel/runtime/core-js/array/join.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Card/Card.jsx">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/views/RegisterProduct/RegisterProduct.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="141" column="48" lean-forward="true" selection-start-line="141" selection-start-column="48" selection-end-line="141" selection-end-column="48" />
+        <state relative-caret-position="1411">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
             <element signature="e#59#120#0" expanded="true" />
-            <element signature="e#238#290#0" expanded="true" />
+            <element signature="e#240#292#0" expanded="true" />
+            <element signature="e#578#630#0" expanded="true" />
           </folding>
         </state>
       </provider>
