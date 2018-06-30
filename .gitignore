@@ -1,6 +1,7 @@
 /target/
 src/main/resources/META-INF/persistence.xml
 src/main/webapp/WEB-INF/glassfish-resources.xml
+*.DS_STORE
 
 # Node
 node_modules

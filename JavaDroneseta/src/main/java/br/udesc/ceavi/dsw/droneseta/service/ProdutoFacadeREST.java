@@ -7,9 +7,12 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
 import javax.ws.rs.Consumes;
+import javax.ws.rs.DELETE;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
+import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 
@@ -32,6 +35,26 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
     @Consumes(MediaType.APPLICATION_JSON)
     public void create(Produto entity) {
         super.create(entity);
+    }
+    
+    @PUT
+    @Path("{id}")
+    @Consumes(MediaType.APPLICATION_JSON)
+    public void edit(@PathParam("id") Long id, Produto entity) {
+        super.edit(entity);
+    }
+
+    @DELETE
+    @Path("{id}")
+    public void remove(@PathParam("id") Long id) {
+        super.remove(super.find(id));
+    }
+
+    @GET
+    @Path("{id}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Produto find(@PathParam("id") Long id) {
+        return super.find(id);
     }
 
     @GET
@@ -61,12 +84,7 @@ public class ProdutoFacadeREST extends AbstractFacade<Produto> {
     @Produces(MediaType.APPLICATION_JSON)
     public List<Produto> getMaisVendidos() {
         Query query = em.createQuery(""
-            + "SELECT p.descricao, "
-                   + "p.preco, "
-                   + "p.tamanho, "
-                   + "p.urlFoto "
-              + "FROM Produto p "
-          + "GROUP BY p.descricao, p.preco, p.tamanho, p.urlFoto", Produto.class);
+            + "SELECT p.descricao, p.preco, p.tamanho, p.urlFoto FROM Produto p GROUP BY p.descricao, p.preco, p.tamanho, p.urlFoto", Produto.class);
         query.setMaxResults(5);
         
         return query.getResultList();
