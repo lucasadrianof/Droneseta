@@ -8,7 +8,7 @@ class CadastrarProduto extends Component{
         descricao: '',
         preco: 0,
         tamanho: '',
-        urlfoto: ''
+        urlFoto: ''
     }
 
     _handleInputs = event => {
@@ -30,7 +30,7 @@ class CadastrarProduto extends Component{
                 break;
             case 'urlfoto':
                 this.setState({
-                    urlfoto: event.target.value
+                    urlFoto: event.target.value
                 });
                 break;
             default:
@@ -38,6 +38,24 @@ class CadastrarProduto extends Component{
     };
 
     _handleSubmit = () => {
+
+        let data = {
+            descricao: this.state.descricao,
+            preco: this.state.preco,
+            tamanho: this.state.tamanho,
+            urlFoto: this.state.urlFoto
+
+        };
+
+        fetch("http://localhost:8080/JavaDroneseta/webresources/produtos/", {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+
         console.log(this.state)
     };
 
@@ -48,7 +66,7 @@ class CadastrarProduto extends Component{
                 <nav className="navbar navbar-default">
 
                     <div className="navbar-header">
-                        <a href="#" className="navbar-brand">DRONESETA Produto</a>
+                        <a href="#" className="navbar-brand">DRONESETA</a>
                     </div>
                     <div className="navbar-collapse" id="barra-navegacao">
                         <ul className="nav navbar-nav navbar-right">
@@ -99,7 +117,7 @@ class CadastrarProduto extends Component{
 
                         <div className="row">
                             <div className="col-md-12">
-                                <input className="btn btn-primary pull-right" type="submit" id="cadastrar" value="Cadastrar" onClick={this._handleSubmit}/>
+                                <input className="btn btn-primary pull-right" type="button" id="cadastrar" value="Cadastrar" onClick={this._handleSubmit}/>
                             </div>
                         </div>
                     </form>

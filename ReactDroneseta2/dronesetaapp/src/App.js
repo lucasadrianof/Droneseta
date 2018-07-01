@@ -4,6 +4,11 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 
 
 class App extends Component {
+
+    componentDidMount(){
+        console.log("teste");
+    }
+
     render(){
         return(
             <div className="container">
@@ -15,9 +20,9 @@ class App extends Component {
                     <div className="navbar-collapse" id="barra-navegacao">
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/CadastrarProduto"><button className='btn btn-default'>Cadastrar Produto</button></Link></li>
-                            <li><button className='btn btn-default'>Carrinho</button></li>
-                            <li><button className='btn btn-default'>Cadastrar</button></li>
-                            <li><button className='btn btn-default'>Login</button></li>
+                            <li><Link to="/CadastrarUsuario"><button className='btn btn-default'>Cadastrar Usuario</button></Link></li>
+                            <li><Link to="/Carrinho"><button className='btn btn-default'>Carrinho</button></Link></li>
+                            <li><Link to="/Login"><button className='btn btn-default'>Login</button></Link></li>
                         </ul>
                     </div>
 

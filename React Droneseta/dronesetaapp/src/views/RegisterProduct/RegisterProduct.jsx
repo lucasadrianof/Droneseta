@@ -45,9 +45,6 @@ class RegisterProduct extends React.Component{
         urlfoto: ''
     };
 
-
-
-
     _handleInputs = event => {
 
         switch (event.target.name){
@@ -80,8 +77,6 @@ class RegisterProduct extends React.Component{
     _handleSubmit = () => {
         console.log(this.state)
     };
-
-
 
     render() {
 
