@@ -5,9 +5,9 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 class Login extends Component{
 
     state = {
-        cpf: 0,
+        cpf: 123,
         senha: ''
-    }
+    };
 
     _handleInputs = event => {
         switch (event.target.name){

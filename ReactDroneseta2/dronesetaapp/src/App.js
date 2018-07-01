@@ -2,18 +2,24 @@ import React, { Component } from 'react';
 import './App.css';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 
-
 class App extends Component {
 
     componentDidMount(){
-        console.log("teste");
+
+        fetch('http://localhost:8080/JavaDroneseta/webresources/produtos/disponiveis/', {
+            method: 'GET',
+            headers: {'Content-Type':'application/json'},
+        }).then(function(response){
+            console.log(response.json());
+        }).catch(function (err) {
+                console.error(err);
+        });
     }
 
     render(){
         return(
             <div className="container">
                 <nav className="navbar navbar-default">
-
                     <div className="navbar-header">
                         <a className="navbar-brand">DRONESETA</a>
                     </div>
@@ -21,15 +27,14 @@ class App extends Component {
                         <ul className="nav navbar-nav navbar-right">
                             <li><Link to="/CadastrarProduto"><button className='btn btn-default'>Cadastrar Produto</button></Link></li>
                             <li><Link to="/CadastrarUsuario"><button className='btn btn-default'>Cadastrar Usuario</button></Link></li>
+                            <li><Link to="/ProdutosMaisVendidos"><button className='btn btn-default'>Produtos + vendidos</button></Link></li>
                             <li><Link to="/Carrinho"><button className='btn btn-default'>Carrinho</button></Link></li>
                             <li><Link to="/Login"><button className='btn btn-default'>Login</button></Link></li>
                         </ul>
                     </div>
-
                 </nav>
 
                 <section>
-
                     <div className="row">
                         <div className="col-md-6">
                             <h2>Produtos disponíveis</h2>
@@ -41,10 +46,9 @@ class App extends Component {
                             </button>
                         </div>
                     </div>
-
                     <div className="container row">
                         <table className="table table-bordered" id="tabelaProdutos">
-
+                            {/*{this.componentDidMount()}*/}
                         </table>
                     </div>
 

@@ -101,11 +101,8 @@ class Carrinho extends Component{
                     <div className="row container">
                         <div className="col-md-8"></div>
                         <div className="col-md-4">
-                            <div className="col-md-8">
-                                <button type="button" className="btn btn-danger pull-right" disabled="disabled">Remover do carrinho</button>
-                            </div>
                             <div className="col-md-4">
-                                <input type="submit" className="btn btn-primary" href="carrinho-segunda-etapa.html" value="Prosseguir"/>
+                                <input type="submit" className="btn btn-primary" value="Prosseguir"/>
                             </div>
                         </div>
                     </div>
