@@ -44,7 +44,6 @@ class CadastrarProduto extends Component{
             preco: this.state.preco,
             tamanho: this.state.tamanho,
             urlFoto: this.state.urlFoto
-
         };
 
         fetch("http://localhost:8080/JavaDroneseta/webresources/produtos/", {
@@ -56,7 +55,6 @@ class CadastrarProduto extends Component{
             body: JSON.stringify(data)
         });
 
-        console.log(this.state)
     };
 
     render(){

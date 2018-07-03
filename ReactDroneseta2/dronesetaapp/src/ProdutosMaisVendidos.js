@@ -4,13 +4,18 @@ import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 
 class ProdutosMaisVendidos extends Component{
 
+    state = {
+        dados: []
+    };
 
     componentDidMount(){
-        fetch('http://localhost:8080/JavaDroneseta/webresources/produtos/maisvendidos/', {
+        fetch('http://localhost:8080/JavaDroneseta/webresources/produtos/disponiveis/', {
             method: 'GET',
             headers: {'Content-Type':'application/json'},
         }).then(function(response){
-            console.log(response.json());
+            return response.json();
+        }).then((json) => {
+            this.setState({data: json});
         }).catch(function (err) {
             console.error(err);
         });
